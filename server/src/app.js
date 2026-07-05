@@ -30,7 +30,7 @@ app.post('/url', async (req,res)=>{
     else{
         actualURL = actualURL;
     }
-    shortURL  = "localhost:3000/" + shortID;
+    shortURL  = "https://urlshortner-jh24.onrender.com/" + shortID;
 
     const data = await URLModel.create({
         shortID,
