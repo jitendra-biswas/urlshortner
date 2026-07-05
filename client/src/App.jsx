@@ -12,7 +12,7 @@ const App = () => {
 
 const submitHandler = async (e)=>{
    e.preventDefault();
-   const response = await axios.post("http://localhost:3000/url",{
+   const response = await axios.post("https://urlshortner-jh24.onrender.com/url",{
     actualURL:actualURL,
    })
     setactualURL("");
@@ -83,7 +83,7 @@ const submitHandler = async (e)=>{
                 ref={inputRef}
                 className="w-full h-full border-none outline-none text-green-600"
                 type="text"
-                placeholder="localhost:3000/shortURL"
+                placeholder="https://urlshortner-jh24.onrender.com/shortURL"
                 value={ShortUrl}
                 onChange={(e)=>setShortUrl(e.target.value)}
               />
